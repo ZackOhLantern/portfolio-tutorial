@@ -85,10 +85,17 @@ body {
     margin-bottom: 20px;
 }
 
-/*needs to be more specific with selector*/
-.subtitle {
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color:transparent;
     font-weight: 600;
+}
+
+.img-text-wrapper:hover .subtitle {
+
     color: lightgreen;
+    font-weight: 600;
 }
 
 .img-darken { 

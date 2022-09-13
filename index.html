@@ -25,6 +25,7 @@
                 </div>
             </div>    
         </div>
+      
         <div class="content-wrapper">
             <div class="portfolio-items-wrapper">
                 <div class="portfolio-item-wrapper">
@@ -197,4 +198,20 @@
         </div>
     </div>
 </body>
+  <!--For some reason this is affecting the text as well. needs to be fixed so only the bg img is darkened-->>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            //console.log(portfolioItem);
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
 </html>
