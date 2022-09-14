@@ -125,10 +125,13 @@ body {
 .two-column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 20px;
 }
 
 .profile-image-wrapper img {
-    width: 100%;
+    width: 500px;
+    height: auto;
+    
 }
 
 .profile-content-wrapper {
