@@ -100,5 +100,10 @@ body {
 
 .img-darken { 
     transition: 1s;
-    filter: brightness(10%);
+    filter: brightness(30%);
+}
+
+.img-lighten {
+    transition: 1s;
+    filter: brightness(100%);
 }
