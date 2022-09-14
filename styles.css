@@ -2,6 +2,10 @@
 
 body {
     margin: 0px;
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 /* nav styles */
@@ -41,11 +45,11 @@ body {
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .nav-link-wrapper a:hover {
-    color: black;
+    color: white;
 }
 
 /* Portfolio styles*/
@@ -81,8 +85,9 @@ body {
 }
 
 .logo-wrapper img {
-    width: 50%;
+    width: 70%;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 
@@ -106,4 +111,31 @@ body {
 .img-lighten {
     transition: 1s;
     filter: brightness(100%);
+}
+
+.active-nav-link {
+    border-bottom: 1px solid white;
+}
+
+.active-nav-link a {
+    color: white !important;
+}
+
+/*About page*/
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: lightgreen;
+
 }
