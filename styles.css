@@ -122,10 +122,17 @@ body {
 }
 
 /*About page*/
+.content-wrapper{
+    padding: 20px;
+    max-width: 1000px;
+    height:auto;
+    justify-self: center;
+}
+
 .two-column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 20px;
+
 }
 
 .profile-image-wrapper img {
